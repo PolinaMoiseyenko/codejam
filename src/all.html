@@ -23,34 +23,36 @@
     <div class="container-fluid">
       <div class="row">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="index.html">
-            <h1>Фотографы Беларуси</h1>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="all.html">Фотографы</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">О нас</a>
-              </li>
-              <li class="nav-item language-select dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Язык
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">русский</a>
-                  <a class="dropdown-item" href="#">english</a>
-                  <a class="dropdown-item" href="#">беларускі</a>
-                </div>
-              </li>
-            </ul>
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <h1>Фотографы Беларуси</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="all.html">Фотографы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item language-select dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Язык
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">русский</a>
+                    <a class="dropdown-item" href="#">english</a>
+                    <a class="dropdown-item" href="#">беларускі</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -59,33 +61,80 @@
     <!-- ***** Header Area End ***** -->
 
         <!-- ***** Main Start ***** -->
-        <main class="content-all-person">
-            <section class="all-person-row">
-                <h1 class="all-person-title">Фотографы</h1>
-                <ul class="all-person-field">из
-                    <li class="all-person-item"><a href="#" title="">Минска</a></li>
-                    <li class="all-person-item"></li><a href="#" title="">Бреста</a></li>
-                    <li class="all-person-item"></li><a href="#" title="">Гомеля</a></li>
-                    <li class="all-person-item"></li><a href="#" title="">Витебска</a></li>
-                    <li class="all-person-item"></li><a href="#" title="">Гродно</a></li>
-                </ul>
-                <article class="all-person-item">
-                    <!-- Left 1/3 -->
-                    <div class="all-person-img all-item-img"></div>
-                    <!-- Right 2/3 -->
-                    <h2 class="all-item-title">Иван Иванов</h2>
-                    <p class="all-item-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit.</p>
-                </article>
-                <article class="all-person-item">
-                    <!-- Left 1/3 -->
-                    <div class="all-person-img all-item-img"></div>
-                    <!-- Right 2/3 -->
-                    <h2 class="all-item-title">Иван Иванов</h2>
-                    <p class="all-item-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sitametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsecteturadipisicing elit.</p>
-                </article>
-            </section>
-            <!-- ***** First Area Row End ***** -->
-        </main>
+  <main class="photographs">
+    <section class="photographs-list">
+      <div class="container bordered-container">
+        <div class="row py-5">
+          <div class="col-6">
+           <input type="search" class="search-input" placeholder="Поиск по имени и фамилии" autocomplete="off" spellcheck="false">
+          </div> 
+          <div class="col-6">
+            <ul class="list-inline">
+              <li class="list-inline-item city-name"><a href="#" title="">Минск</a></li>
+              <li class="list-inline-item city-name"><a href="#" title="">Брест</a></li>
+              <li class="list-inline-item city-name"><a href="#" title="">Гомель</a></li>
+              <li class="list-inline-item city-name"><a href="#" title="">Витебск</a></li>
+              <li class="list-inline-item city-name"><a href="#" title="">Гродно</a></li>
+              <li class="list-inline-item city-name"><a href="#" title="">Могилев</a></li>
+            </ul> 
+          </div>       
+        </div>
+        <div class="row py-5">
+          <div class="col-3">
+            <img src="./images/devs/kasatka660.jpeg" alt="photograph's picture">
+          </div>
+          <div class="col-9 px-5">
+            <h3 class="photograph-name"><a href="">Иван Иванов</a></h3>
+            <p class="photograph-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-3">
+            <img src="./images/devs/kasatka660.jpeg" alt="photograph's picture">
+          </div>
+          <div class="col-9 px-5">
+            <h3 class="photograph-name"><a href="">Иван Иванов</a></h3>
+            <p class="photograph-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit.</p>
+          </div>
+        </div>
+         
+         <div class="row py-5">
+          <div class="col-3">
+            <img src="./images/devs/kasatka660.jpeg" alt="photograph's picture">
+          </div>
+          <div class="col-9 px-5">
+            <h3 class="photograph-name"><a href="">Иван Иванов</a></h3>
+            <p class="photograph-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit.</p>
+          </div>
+        </div>
+         
+         <div class="row py-5">
+          <div class="col-3">
+            <img src="./images/devs/kasatka660.jpeg" alt="photograph's picture">
+          </div>
+          <div class="col-9 px-5">
+            <h3 class="photograph-name"><a href="">Иван Иванов</a></h3>
+            <p class="photograph-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit.</p>
+          </div>
+        </div>
+         
+         <div class="row py-5">
+          <div class="col-3">
+            <img src="./images/devs/kasatka660.jpeg" alt="photograph's picture">
+          </div>
+          <div class="col-9 px-5">
+            <h3 class="photograph-name"><a href="">Иван Иванов</a></h3>
+            <p class="photograph-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consecteturadipisicing elit.</p>
+          </div>
+        </div>
+         
+         
+
+    
+      </div>
+    </section>
+      <!-- ***** First Area Row End ***** -->
+  </main>
 
         <!-- ***** Footer Area Start ***** -->
     <footer class="footer-area">
