@@ -6,8 +6,8 @@ const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhcm9oaW4iLCJhIjoiY2pyZGVld2V1MW5iZjQ1cG5zcGl3NmppciJ9.cvrpAFaoU6V389qbey-cQg';
 
 const map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/light-v9',
+  container: 'map-leaflet',
+  style: 'mapbox://styles/mapbox/light-v10',
   zoom: 12,
   center: [27.552516, 53.897726],
 });
