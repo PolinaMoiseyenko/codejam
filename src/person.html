@@ -61,7 +61,19 @@
                     <h1 class="content-person-title about-title">Иван Иванов</h1>
                     <article class="content-person-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</article>
                     <div class="content-person-img"></div>
-                    <button class="content-person-video">Видео</button>
+
+                    <!-- Start video overlay -->
+                    <div class="overlay-video">
+                        <div class="video-wrapper-ext">
+                            <div class="video-wrapper">
+                                <div class="overlay-video-close"></div>
+                                <iframe class="overlay-video-player" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-url="" class="content-person-video js-overlay-start">Видео</button>
+                    <!-- End video overlay -->
+
                 </section>
                 <!-- Right 2/3 -->
                 <section class="content-person-area timeline-area">
