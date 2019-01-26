@@ -1,5 +1,115 @@
+h1, h2, h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  margin: 0 auto;
+}
 header {
-	nav {
-	 padding: 20px;
+  &.on-main-page {
+    background: url('../images/header-bg.png');
+    background-size: cover;
+    min-height: 500px;
+    nav.navbar {
+      margin-top: 110px;
+       margin-left: 180px;
+       width: 100%;
+       @media (max-width: 992px) {
+        margin-left: 0;
+      }
+      ul.navbar-nav {
+        margin-left: 200px;
+      }
+    }
+  }
+	nav.navbar {
+   width: 100%;
+     @media (max-width: 992px) {
+      margin-left: 0;
+     }
+    ul.navbar-nav {
+      margin-left: 60px;
+        li {
+          padding: 20px;
+            &.language-select {
+              background: url('../images/language-select.png') no-repeat left;
+              margin-left: 30px;
+              padding-left: 50px;
+            }
+            a.nav-link {
+              color: #ffffff;
+              text-transform: uppercase;
+              font-size: 18px;
+              font-weight: bold;
+                &:hover, &:focus {
+                  text-decoration: underline;
+                }
+            }
+        }
+    }
 	}
+}
+
+main.content-area {
+  section {
+    padding: 50px;
+      &.main-info {
+          p {
+            text-align: center;
+            font-size: 18px;
+          }
+    }
+    &.random-person {
+      background: url('../images/middle-bg.png');
+        .random-wrapper {
+          width: 400px;
+          max-width: 100%;
+          background: rgba(255, 255, 255 , 0.6);
+          padding: 20px;
+          margin: 0 auto;
+          text-align: center;
+        }
+    }
+  }
+}
+
+footer {
+  padding: 50px;
+  .devs {
+        .dev {
+          text-align: center;
+          img {
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 102px;
+          }
+          .dev__info {
+            color: #8e8e8e;
+            padding-top: 9px;
+              .dev__name {
+                color: #303030;
+                font-family: "Lato Semibold";
+                font-size: 17px;
+              }
+              .dev__contacts {
+                padding-top: 4px;
+                a {
+                    color: #bfbfbf;
+                    margin: 0 9px;
+                  i {                 
+                    font-size: 14px;
+                      &.fa-link {
+                        transform: rotate(90deg);
+                      }
+                  }
+                  &:hover, &:focus {
+                    color: #1f89ba;
+                  }
+                }
+              }
+          }
+        }
+    }
 }
