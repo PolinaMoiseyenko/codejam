@@ -5,11 +5,8 @@
     <meta charset="utf-8">
     <title>Фотографы Беларуси</title>
     <meta name="description" content="">
-    <!-- Place favicon.ico in the root directory -->
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-
     <!-- Core Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -22,32 +19,42 @@
     <div class="wrapper">
 
         <!-- ***** Header Area Start ***** -->
-        <header class="header-area">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html"><img src="" alt="Фотографы Беларуси"></a>
-            <!-- Menu Area Start -->
-            <div class="menu-area">
-                <nav class="navbar">
-                    <!-- Menu Area -->
-                    <ul>
-                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                        <li class="nav-item"><a class="nav-link" href="peoples.html">Фотографы Беларуси</a></li>
-                    </ul>
-                </nav>
-                <!-- Search Area Start -->
-                <input type="search" name="search" class="search-area" placeholder="Антон Бобров">
-                <button type="submit" class="search-area-button">Найти</button>
-                <!-- Language Area Start -->
-                <section class="lang-area">
-                    <a href="#" class="lang-area-button fa fa-globe"></a>
-                    <ul class="lang-area-list hide-area">
-                        <li class="lang-item active-item">русский</li>
-                        <li class="lang-item">беларускі</li>
-                        <li class="lang-item">english</li>
-                    </ul>
-                </section>
-            </div>
-        </header>
+      <header class="header-area">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="all.html">Фотографы Беларуси</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Язык
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">русский</a>
+                  <a class="dropdown-item" href="#">english</a>
+                  <a class="dropdown-item" href="#">беларускі</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          </nav>
+      </header>
+
+
+
+
+        
         <!-- ***** Header Area End ***** -->
 
         <!-- ***** Center Area Start ***** -->
