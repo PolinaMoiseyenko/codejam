@@ -12,12 +12,18 @@ section {
   margin: 0 auto;
 }
 header {
-  background: url('../images/header-bg.png');
-  background-size: cover;
-  min-height: 500px;
+  &.on-main-page {
+    background: url('../images/header-bg.png');
+    background-size: cover;
+    min-height: 500px;
+      nav.navbar {
+        margin-top: 120px;
+
+      }
+  }
 	nav.navbar {
-	 margin-top: 120px;
    margin-left: 180px;
+   width: 100%;
    @media (min-width: 992px) {
     margin-left: 0;
    }
