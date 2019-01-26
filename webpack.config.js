@@ -41,6 +41,14 @@ module.exports = {
       template: `${__dirname}/src/index.html`,
       filename: 'index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: `${__dirname}/src/person.html`,
+      filename: 'person.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: `${__dirname}/src/all.html`,
+      filename: 'all.html',
+    }),
     // new CopyWebpackPlugin([
     //   {
     //     from: './src/images/',
