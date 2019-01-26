@@ -1,0 +1,61 @@
+$font-family: britishcouncilsans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+
+h1, 
+h2,
+h3 {
+  font-family:  $font-family;
+  color: #3E3E3E;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.content-person-area {
+  width: 100%;
+}
+
+.activity-person-item {
+  .activity-person-time {
+    padding-left: 1em;
+    color: #5090df;
+  }
+  .activity-person-paragraph {
+    color: #3c3c3c;
+    font-family: $font-family;
+    font-size: .9rem;
+  }
+}
+
+.footer-area {
+  .footer-area-title {
+    padding: 3% 0 2% 0;
+    font-size: 1rem;
+    color: #fff;
+    font-family: $font-family;
+  }
+  .developers-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .footer-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 250px;
+      margin-top: 3%;
+      .footer-item-title {
+        font-size: 1rem;
+        color: #fff;
+        font-family: $font-family;
+      }
+      .footer-item-link {
+        text-decoration: none;
+      }
+    }
+  }
+}
