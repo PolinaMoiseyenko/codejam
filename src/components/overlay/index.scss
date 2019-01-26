@@ -52,10 +52,10 @@
 }
 
 .overlay-video-close {
-  background-image: url(http://djit.ac/assets/images/news/mark.png);
+  background-image: url('../../images/mark.png');
   position: absolute;
-  top: -50px;
-  right: 0px;
+  top: 0;
+  right: 0;
   cursor: pointer;
   z-index: 9999;
   height: 40px;
