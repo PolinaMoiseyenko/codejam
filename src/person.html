@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Иван Иванов - Фотографы Беларуси</title>
     <meta name="description" content="">
+    <!-- Include MapBox GL JS CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Place favicon.ico in the root directory -->
     <link href="css/main.css" rel="stylesheet" type="text/css">
 
@@ -102,7 +104,7 @@
             <!-- ***** Third Area Row Start ***** -->
             <section class="content-person-row geo-row">
                 <h2 class="content-person-title geo-title">Биография на карте</h2>
-                <div class=""></div>
+                <div id="map-leaflet" class="content-person-geo"></div>
                 <!-- Start Gallery here -->
 
 
