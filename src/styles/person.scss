@@ -14,9 +14,18 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
+.content-person {
+  .content-section {
+    margin-top: 7%;
+  }
+}
 
 .content-person-area {
   width: 100%;
+  .person-img {
+    border-radius: 50%;
+    width: 100%;
+  }
 }
 
 .activity-person-item {
@@ -28,34 +37,5 @@ h2 {
     color: #3c3c3c;
     font-family: $font-family;
     font-size: .9rem;
-  }
-}
-
-.footer-area {
-  .footer-area-title {
-    padding: 3% 0 2% 0;
-    font-size: 1rem;
-    color: #fff;
-    font-family: $font-family;
-  }
-  .developers-wrap {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    .footer-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 250px;
-      margin-top: 3%;
-      .footer-item-title {
-        font-size: 1rem;
-        color: #fff;
-        font-family: $font-family;
-      }
-      .footer-item-link {
-        text-decoration: none;
-      }
-    }
   }
 }
