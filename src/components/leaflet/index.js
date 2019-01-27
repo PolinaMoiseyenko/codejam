@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import './index.scss';
 import template from './index.template';
-import '../../data/ru.json';
+import data from '../../data/ru.json';
 
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
@@ -19,7 +19,7 @@ const createElement = () => {
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
     zoom: 12,
-    center: [27.552516, 53.897726],
+    center: data[0].geo,
   });
 
   map.on('load', () => {
