@@ -11,3 +11,5 @@ import './components/person/index';
 import './components/timeline/index';
 import './components/author-of-day/index';
 import './components/header/index';
+import './components/footer/index';
+import './components/main-info/index';
