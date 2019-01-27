@@ -10,3 +10,4 @@ import './styles/person.scss';
 import './components/all/index';
 import './components/person/index';
 import './components/timeline/index';
+import './components/author-of-day/index';
