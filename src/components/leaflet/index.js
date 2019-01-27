@@ -45,6 +45,7 @@ const createMap = () => {
         `<article class="marker-name">
           <h2>${targetPerson.name}</h2>
           <date>родился ${targetPerson.biography[0].date}</date>
+          <p>родной город &ndash; ${targetPerson.geoname}</p>
         </article>`,
       ).addTo(map);
   });
