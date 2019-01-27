@@ -1,10 +1,13 @@
 import data from "./../data/interface/translation.json"
 
 export default function(key) {
-	const lang = getLanguage();
+	let lang = getLanguage();
+	if (!lang) {
+		lang = "ru";
+	}
 	if (data[0][key] && data[0][key][lang]) {
 		return data[0][key][lang];
-	}
+	} 
 	return key;
 }
 
