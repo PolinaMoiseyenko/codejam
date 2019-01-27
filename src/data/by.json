@@ -30,7 +30,9 @@
       "«Чарнобыльскі нацюрморт» (1996)",
       "«Парыж! Парыж! Я не хачу дадому!» (2001—2007)"
     ],
-    "video": "https://www.youtube.com/embed/NAnQKnrH1gs?rel=0&amp;showinfo=0&amp;autoplay=1"
+    "video": "https://www.youtube.com/embed/NAnQKnrH1gs?rel=0&amp;showinfo=0&amp;autoplay=1",
+    "geo": [30.2049000, 55.1904000],
+    "geoname": "Віцебск"
   },
   {
     "id": 2,
@@ -67,7 +69,9 @@
       }
     ],
     "works": [],
-    "video": ""
+    "video": "",
+    "geo": [26.9291124, 54.4953618],
+    "geoname": "Вілейка"
   },
   {
     "id": 3,
@@ -113,7 +117,9 @@
       "Bromografika. 1934",
       "Narocz najwiksze jezioro w Polsce: z 38 ilustracjami autora.1935"
     ],
-    "video": "https://www.youtube.com/embed/OUl9EEOXAeY?rel=0&amp;showinfo=0&amp"
+    "video": "https://www.youtube.com/embed/OUl9EEOXAeY?rel=0&amp;showinfo=0&amp",
+    "geo": [26.02326, 53.69559],
+    "geoname": "Асташына"
   },
   {
     "id": 4,
@@ -166,7 +172,9 @@
       "«Дэкаратыўна-прыкладное мастацтва Беларусі XII-ХVIII стагоддзяў»",
       "«Іканапіс Беларусі XII-ХVIII стагоддзяў»"
     ],
-    "video": "https://www.youtube.com/embed/_f5rIN0H4mU?rel=0&amp;showinfo=0&amp;autoplay=1"
+    "video": "https://www.youtube.com/embed/_f5rIN0H4mU?rel=0&amp;showinfo=0&amp;autoplay=1",
+    "geo": [27.56667, 53.9],
+    "geoname": "Мінск"
   },
   {
     "id": 5,
@@ -208,6 +216,8 @@
       "«Ветэраны. Месяц май» (1975—2007)",
       "«Мастакі» (2010)"
     ],
-    "video": "https://www.youtube.com/embed/Rh5e-qcdmdQ?rel=0&amp;showinfo=0&amp"
+    "video": "https://www.youtube.com/embed/Rh5e-qcdmdQ?rel=0&amp;showinfo=0&amp",
+    "geo": [30.2059467, 55.1930088],
+    "geoname": "Віцебск"
   }
 ]

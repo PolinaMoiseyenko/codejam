@@ -2,6 +2,8 @@ import $ from 'jquery';
 import './index.scss';
 import template from './index.template';
 import data from '../../data/ru.json';
+import dataEng from '../../data/eng.json';
+import dataBy from '../../data/by.json';
 
 
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -17,7 +19,23 @@ const getPerson = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const currentId = urlParams.get('id');
 
-  targetPerson = data.find(person => person.id == currentId);
+  const lang = urlParams.get('lang');
+  let title = 'Биография на карте';
+
+  switch (lang) {
+    case 'en':
+      title = 'Life story';
+      targetPerson = dataEng.find(person => person.id == currentId);
+      break;
+    case 'by':
+      title = 'Біяграфія на карце';
+      targetPerson = dataBy.find(person => person.id == currentId);
+      break;
+    default:
+      targetPerson = data.find(person => person.id == currentId);
+  }
+
+  $('.geo-title').text(title);
 
   return targetPerson;
 };
@@ -44,8 +62,8 @@ const createMap = () => {
       .setHTML(
         `<article class="marker-name">
           <h2>${targetPerson.name}</h2>
-          <date>родился ${targetPerson.biography[0].date}</date>
-          <p>родной город &ndash; ${targetPerson.geoname}</p>
+          <date>${targetPerson.biography[0].date}</date>
+          <p>${targetPerson.geoname}</p>
         </article>`,
       ).addTo(map);
   });
