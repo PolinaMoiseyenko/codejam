@@ -48,12 +48,9 @@ export default function(person) {
                 <!-- End Gallery -->
             </section>
             <section class="content-section container content-person-row geo-row">
-                <h2 class="content-person-title geo-title">Биография на карте</h2>
-                <div id="map-leaflet" class="content-person-geo"></div>
                 <!-- Start Gallery here -->
 
 
                 <!-- End Gallery -->
-        </div>
-        </section> `
+            </section> `
 }

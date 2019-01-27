@@ -3,6 +3,7 @@ import $ from 'jquery';
 import personRender from './person.template';
 import data from '../../data/ru.json';
 import loadOverlay from '../overlay/index';
+import mapbox from '../leaflet/index';
 
 const render = () => {
   if ($('.content-person').length > 0) {
@@ -25,6 +26,7 @@ const init = async () => {
   await render();
   await checkVideoData();
   loadOverlay();
+  mapbox();
 };
 
 init();
