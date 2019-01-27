@@ -30,7 +30,8 @@
             "«Чернобыльский натюрморт» (1996)",
             "«Париж! Париж! Я не хочу домой!» (2001—2007)"
         ],
-        "video": "https://www.youtube.com/embed/NAnQKnrH1gs?rel=0&amp;showinfo=0&amp;autoplay=1"
+        "video": "https://www.youtube.com/embed/NAnQKnrH1gs?rel=0&amp;showinfo=0&amp;autoplay=1",
+        "gallery": 10
     },
     {
         "id": 2,
@@ -67,7 +68,8 @@
             }
         ],
         "works": [],
-        "video": ""
+        "video": "",
+        "gallery": 6
     },
     {
         "id": 3,
@@ -113,7 +115,8 @@
             "Bromografika. 1934",
             "Narocz najwiksze jezioro w Polsce: z 38 ilustracjami autora.1935"
         ],
-        "video": "https://www.youtube.com/embed/OUl9EEOXAeY?rel=0&amp;showinfo=0&amp"
+        "video": "https://www.youtube.com/embed/OUl9EEOXAeY?rel=0&amp;showinfo=0&amp",
+        "gallery": 9
     },
     {
         "id": 4,
@@ -166,7 +169,8 @@
             "«Декоративно-прикладное искусство Беларуси XII-ХVIII веков»",
             "«Иконопись Беларуси XII-ХVIII веков»"
         ],
-        "video": "https://www.youtube.com/embed/_f5rIN0H4mU?rel=0&amp;showinfo=0&amp;autoplay=1"
+        "video": "https://www.youtube.com/embed/_f5rIN0H4mU?rel=0&amp;showinfo=0&amp;autoplay=1",
+        "gallery": 10
     },
     {
         "id": 5,
@@ -208,6 +212,7 @@
             "«Ветераны. Месяц май» (1975-2007)",
             "«Художники» (2010)"
         ],
-        "video": "https://www.youtube.com/embed/Rh5e-qcdmdQ?rel=0&amp;showinfo=0&amp"
+        "video": "https://www.youtube.com/embed/Rh5e-qcdmdQ?rel=0&amp;showinfo=0&amp",
+        "gallery": 1
     }
 ]

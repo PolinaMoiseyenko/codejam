@@ -42,15 +42,7 @@ export default function(person) {
                 </article>`).join('')}
             </section>
             <section class="content-section container content-person-row gallery-row">
-                <!-- Width 100% -->
-                <!-- Start Gallery here -->
-
-                <!-- End Gallery -->
             </section>
-            <section class="content-section container content-person-row geo-row">
-                <!-- Start Gallery here -->
-
-
-                <!-- End Gallery -->
+            <section class="content-section container content-person-row geo-row">                
             </section> `
 }

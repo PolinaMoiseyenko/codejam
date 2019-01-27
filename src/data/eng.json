@@ -30,7 +30,8 @@
       "«Chernobyl still-life» (1996)",
       "«Paris! Paris! I don’t want to return home!» (2001—2007)"
     ],
-    "video": "https://www.youtube.com/embed/NAnQKnrH1gs?rel=0&amp;showinfo=0&amp;autoplay=1"
+    "video": "https://www.youtube.com/embed/NAnQKnrH1gs?rel=0&amp;showinfo=0&amp;autoplay=1",
+    "gallery": 10
   },
   {
     "id": 2,
@@ -67,7 +68,8 @@
       }
     ],
     "works": [],
-    "video": ""
+    "video": "",
+    "gallery": 6
   },
   {
     "id": 3,
@@ -113,7 +115,8 @@
       "Bromografika. 1934",
       "Narocz najwiksze jezioro w Polsce: z 38 ilustracjami autora.1935"
     ],
-    "video": "https://www.youtube.com/embed/OUl9EEOXAeY?rel=0&amp;showinfo=0&amp"
+    "video": "https://www.youtube.com/embed/OUl9EEOXAeY?rel=0&amp;showinfo=0&amp",
+    "gallery": 9
   },
   {
     "id": 4,
@@ -166,7 +169,8 @@
       "«Decorative and fine art of Belarus of XII-XVIII centuries»",
       "«Icon painting of Belarus of XII-XVIII centuries»"
     ],
-    "video": "https://www.youtube.com/embed/_f5rIN0H4mU?rel=0&amp;showinfo=0&amp;autoplay=1"
+    "video": "https://www.youtube.com/embed/_f5rIN0H4mU?rel=0&amp;showinfo=0&amp;autoplay=1",
+    "gallery": 10
   },
   {
     "id": 5,
@@ -208,6 +212,7 @@
       "“Veterans. Month of May” (1975-2007)",
       "“Artists” (2010)"
     ],
-    "video": "https://www.youtube.com/embed/Rh5e-qcdmdQ?rel=0&amp;showinfo=0&amp"
+    "video": "https://www.youtube.com/embed/Rh5e-qcdmdQ?rel=0&amp;showinfo=0&amp",
+    "gallery": 1
   }
 ]
