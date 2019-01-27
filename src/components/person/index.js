@@ -6,12 +6,14 @@ import dataEng from '../../data/eng.json';
 import dataBy from '../../data/by.json';
 import loadOverlay from '../overlay/index';
 import mapbox from '../leaflet/index';
+import galleryRender from '../gallery';
 
 const render = () => {
   if ($('.content-person').length > 0) {
     const container = $('.content-person');
     const urlParams = new URLSearchParams(window.location.search);
     const currentId = urlParams.get('id');
+
     const lang = urlParams.get('lang');
 
     switch (lang) {
@@ -24,6 +26,7 @@ const render = () => {
       default:
         container.append(personRender(data.find(person => person.id == currentId)));
     }
+    container.append(galleryRender(data.find(person => person.id == currentId)))
   }
 };
 

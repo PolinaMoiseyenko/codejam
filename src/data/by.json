@@ -32,7 +32,8 @@
     ],
     "video": "https://www.youtube.com/embed/NAnQKnrH1gs?rel=0&amp;showinfo=0&amp;autoplay=1",
     "geo": [30.2049000, 55.1904000],
-    "geoname": "Віцебск"
+    "geoname": "Віцебск",
+    "gallery": 10
   },
   {
     "id": 2,
@@ -71,7 +72,8 @@
     "works": [],
     "video": "",
     "geo": [26.9291124, 54.4953618],
-    "geoname": "Вілейка"
+    "geoname": "Вілейка",
+    "gallery": 6
   },
   {
     "id": 3,
@@ -119,7 +121,8 @@
     ],
     "video": "https://www.youtube.com/embed/OUl9EEOXAeY?rel=0&amp;showinfo=0&amp",
     "geo": [26.02326, 53.69559],
-    "geoname": "Асташына"
+    "geoname": "Асташына",
+    "gallery": 9
   },
   {
     "id": 4,
@@ -174,7 +177,8 @@
     ],
     "video": "https://www.youtube.com/embed/_f5rIN0H4mU?rel=0&amp;showinfo=0&amp;autoplay=1",
     "geo": [27.56667, 53.9],
-    "geoname": "Мінск"
+    "geoname": "Мінск",
+    "gallery": 10
   },
   {
     "id": 5,
@@ -218,6 +222,7 @@
     ],
     "video": "https://www.youtube.com/embed/Rh5e-qcdmdQ?rel=0&amp;showinfo=0&amp",
     "geo": [30.2059467, 55.1930088],
-    "geoname": "Віцебск"
+    "geoname": "Віцебск",
+    "gallery": 1
   }
 ]
