@@ -1,0 +1,24 @@
+[
+  {
+    "Фотографы Беларуси": {"en": "Photographs of Belarus", "by": "Фатографы Беларусi"},
+    "Главная": {"en": "Main", "by": "Галоўная"},
+    "Фотографы": {"en": "Photographs", "by": "Фатографы"},
+    "O Нас": {"en": "About Us", "by": "Пра Нас"},
+    "Язык": {"en": "Language", "by": "Мова"},
+    "Выдающиеся фотографы Беларуси": {"en": "Outstandong photographs of Belarus", "by": "Выдатныя фатографы Беларусі"},
+    "Фотограф дня": {"en": "Photograph of the day", "by": "Фатограф дня"},
+    "Дизайн и разработка": {"en": "Design and Development", "by": "Дызайн і Распрацоўка"},
+    "website-info-first": {
+      "ru": "Фотоискусство считается одним из изобразительных искусств и занимает одно из ключевых мест в современной массовой культуре. За всю историю своего развития, фотоискусство преодолело огромный путь от чёрно-белых зернёных снимков до сверхкачественных фотографий в цифровом формате." , 
+      "en": "Photo art is considered to be one of the visual arts and occupies one of the key places in modern popular culture. In the entire history of its development, photo art has overcome a huge path from black and white grained photographs to high-quality photographs in digital format.",
+      "by": "Фотамастацтва лічыцца адным з выяўленчых мастацтваў і займае адно з ключавых месцаў у сучаснай масавай культуры. За ўсю гісторыю свайго развіцця, фотамастацтва пераадолела вялізны шлях ад чорна-белых зернёных здымкаў да сверхкачественных фатаграфій у лічбавым фармаце."
+     },
+     "website-info-second": {
+      "ru": "История фотографии Беларуси… Возможно, когда-нибудь она будет написана. Информация об одних из самых выдающихся фотографах Беларуси: их биография, работы, а также видео о них собраны на данном сайте.",
+      "en": "The history of photography in Belarus ... Perhaps someday it will be written. Information about some of the most outstanding photographers of Belarus: their biography, work, as well as videos about them are collected on this site.",
+      "by": "Гісторыя фатаграфіі Беларусі ... Магчыма, калі-небудзь яна будзе напісана. Інфармацыя пра адны з самых выбітных фатаграфія Беларусі: іх біяграфія, працы, а таксама відэа пра іх сабраны на дадзеным сайце."
+    }
+  }
+
+]
+   

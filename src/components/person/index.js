@@ -2,6 +2,8 @@ import $ from 'jquery';
 
 import personRender from './person.template';
 import data from '../../data/ru.json';
+import dataEng from '../../data/eng.json';
+import dataBy from '../../data/by.json';
 import loadOverlay from '../overlay/index';
 import mapbox from '../leaflet/index';
 import galleryRender from '../gallery';
@@ -11,11 +13,24 @@ const render = () => {
     const container = $('.content-person');
     const urlParams = new URLSearchParams(window.location.search);
     const currentId = urlParams.get('id');
-    container.append(personRender(data.find(person => person.id == currentId)));
+
+    const lang = urlParams.get('lang');
+
+    switch (lang) {
+      case 'en':
+        container.append(personRender(dataEng.find(person => person.id == currentId)));
+        break;
+      case 'by':
+        container.append(personRender(dataBy.find(person => person.id == currentId)));
+        break;
+      default:
+        container.append(personRender(data.find(person => person.id == currentId)));
+    }
     container.append(galleryRender(data.find(person => person.id == currentId)))
 
   }
 };
+
 
 const checkVideoData = () => {
   const containerVideo = $('.content-person-video');
