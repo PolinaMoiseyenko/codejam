@@ -3,6 +3,7 @@ import './index.scss';
 import template from './index.template';
 import data from '../../data/ru.json';
 
+
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
 const render = () => {
