@@ -3,5 +3,5 @@ export default function authorRender(person) {
           <div class="content-person-img col-3 artist-img">
               <img class="person-of-day-img" src=${person.photo} alt="photograph's picture">
           </div>
-          <h3 class="content-item-title author-name">${person.name}</h3>`
+          <h3 class="content-item person-of-day-name"><a href="person.html?id=${person.id}">${person.name}</a></h3>`
 }
