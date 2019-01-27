@@ -13,6 +13,7 @@ const render = () => {
     const currentId = urlParams.get('id');
     container.append(personRender(data.find(person => person.id == currentId)));
     container.append(galleryRender(data.find(person => person.id == currentId)))
+
   }
 };
 
@@ -29,6 +30,7 @@ const init = async () => {
   await checkVideoData();
   loadOverlay();
   mapbox();
+  $('.carousel').carousel()
 };
 
 init();

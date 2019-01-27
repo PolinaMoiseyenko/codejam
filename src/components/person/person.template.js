@@ -32,15 +32,16 @@ export default function(person) {
                     </ul>
                 </section>
             </section>
-
-            <section class="content-section container content-person-area activity-area">
-                <h2 class="content-person-title activity-title section-title pb-2 border-bottom border-light">Достижения</h2>
+                ${person.works.length > 0 ? `
+                  <section class="content-section container content-person-area activity-area">
+                    <h2 class="content-person-title activity-title section-title pb-2 border-bottom border-light">Достижения</h2>
                 ${person.works.map(work => 
                 `<article class="activity-person-item">
                     <!-- <time class="activity-person-time"></time>-->
                     <p class="activity-person-paragraph">${work}</p>
                 </article>`).join('')}
-            </section>
+            </section>` : ""}
+            
             <section class="content-section container content-person-row gallery-row">
             </section>
             <section class="content-section container content-person-row geo-row">                
