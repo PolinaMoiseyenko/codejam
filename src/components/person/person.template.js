@@ -23,9 +23,13 @@ export default function(person) {
                 <!-- Right 2/3 -->
                 <section class="content-person-area timeline-area">
                     <h2 class="content-person-title timeline-title section-title border-bottom border-light mt-5">Timeline</h2>
-                    <!-- Start Timeline here -->
-
-                    <!-- End Timeline -->
+                    <ul class="timeline">
+                    ${person.biography.map(item => `
+                        <li>
+                          <time>${item.date}</time>
+                          <p>${item.content}</p>
+                        </li>`).join('')}     
+                    </ul>
                 </section>
             </section>
 
