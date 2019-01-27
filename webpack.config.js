@@ -49,13 +49,12 @@ module.exports = {
       template: `${__dirname}/src/all.html`,
       filename: 'all.html',
     }),
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: './src/images/',
-    //     to: './images/',
-    //     toType: 'dir',
-    //   },
-    // ]),
+    new CopyWebpackPlugin([{
+        from: './src/images/',
+         to: './images/',
+         toType: 'dir',
+      },
+    ]),
   ],
   module: {
     rules: [
