@@ -26,7 +26,7 @@ const init = async () => {
   await render();
   await checkVideoData();
   loadOverlay();
-  await mapbox();
+  mapbox();
 };
 
 init();
