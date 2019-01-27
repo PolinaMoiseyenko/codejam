@@ -8,3 +8,4 @@ import './styles/person.scss';
 
 import './components/leaflet/index';
 import './components/overlay/index';
+import './components/timeline/index';
