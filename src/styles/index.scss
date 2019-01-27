@@ -7,32 +7,19 @@ h1, h2, h3 {
 .container {
   margin: 0 auto;
 }
+
 header {
-  &.on-main-page {
-    background: url('../images/header-bg.png');
-    background-size: cover;
-    min-height: 500px;
-    nav.navbar {
-      margin-top: 110px;
-       margin-left: 180px;
-       width: 100%;
-       @media (max-width: 992px) {
-        margin-left: 0;
-      }
-      ul.navbar-nav {
-        margin-left: 200px;
-      }
-    }
-  }
-	nav.navbar {
+  background-color: #343a40;
+  nav.navbar {
    width: 100%;
+  
      @media (max-width: 992px) {
       margin-left: 0;
      }
     ul.navbar-nav {
       margin-left: 60px;
         li {
-          padding: 20px;
+          padding: 30px 15px;
             &.language-select {
               background: url('../images/language-select.png') no-repeat left;
               margin-left: 30px;
@@ -49,7 +36,25 @@ header {
             }
         }
     }
-	}
+  }
+  &.on-main-page {
+    background: url('../images/header-bg.png');
+    background-size: cover;
+    min-height: 500px;
+    background-color: transparent;
+    nav.navbar {  
+      margin-left: -100px;
+      margin-top: 110px;
+       width: 100%;
+       @media (max-width: 992px) {
+        margin-left: 0;
+      }
+      ul.navbar-nav {
+        margin-left: 70px;
+      }
+    }
+  }
+	
 }
 
 main.content-area {

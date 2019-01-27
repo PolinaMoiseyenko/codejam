@@ -3,7 +3,7 @@ import translate from "./../../utils/translate";
 export default function() {
 	return `
       <div class="container-fluid">
-        <div class="row">
+        <div class="container">
           <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="index.html">
               <h1>${ translate("Фотографы Беларуси") }</h1>
@@ -35,7 +35,7 @@ export default function() {
               </ul>
             </div>
           </nav>
-        </div>
       </div>
+    </div>
   `
 }
