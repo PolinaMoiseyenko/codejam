@@ -4,6 +4,7 @@ import personRender from './person.template';
 import data from '../../data/ru.json';
 import loadOverlay from '../overlay/index';
 import mapbox from '../leaflet/index';
+import galleryRender from '../gallery';
 
 const render = () => {
   if ($('.content-person').length > 0) {
@@ -11,6 +12,7 @@ const render = () => {
     const urlParams = new URLSearchParams(window.location.search);
     const currentId = urlParams.get('id');
     container.append(personRender(data.find(person => person.id == currentId)));
+    container.append(galleryRender(data.find(person => person.id == currentId)))
   }
 };
 
