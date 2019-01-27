@@ -1,7 +1,8 @@
 import $ from 'jquery';
 import './index.scss';
 import template from './index.template';
-import '../../data/ru.json';
+import data from '../../data/ru.json';
+
 
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
@@ -10,46 +11,42 @@ const render = () => {
   $('.geo-row').append(mapbox);
 };
 
+
+let targetPerson = null;
+const getPerson = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentId = urlParams.get('id');
+
+  targetPerson = data.find(person => person.id == currentId);
+
+  return targetPerson;
+};
+
+getPerson();
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhcm9oaW4iLCJhIjoiY2pyZGVld2V1MW5iZjQ1cG5zcGl3NmppciJ9.cvrpAFaoU6V389qbey-cQg';
 
 let map = null;
-
-const createElement = () => {
+const createMap = () => {
   map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
     zoom: 12,
-    center: [27.552516, 53.897726],
+    center: targetPerson.geo,
   });
 
   map.on('load', () => {
-    map.addLayer({
-      id: 'population',
-      type: 'circle',
-      source: {
-        type: 'vector',
-        url: 'mapbox://examples.8fgz4egr',
-      },
-      'source-layer': 'sf2010',
-      paint: {
-        // make circles larger as the user zooms from z12 to z22
-        'circle-radius': {
-          base: 1.75,
-          stops: [[12, 2], [22, 180]],
-        },
-        // color circles by ethnicity, using a match expression
-        // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
-        'circle-color': [
-          'match',
-          ['get', 'ethnicity'],
-          'White', '#fbb03b',
-          'Black', '#223b53',
-          'Hispanic', '#e55e5e',
-          'Asian', '#3bb2d0',
-          /* other */ '#ccc',
-        ],
-      },
-    });
+    const control = new mapboxgl.NavigationControl();
+    map.addControl(control, 'top-left');
+
+    new mapboxgl.Popup({ closeOnClick: false })
+      .setLngLat(targetPerson.geo)
+      .setHTML(
+        `<article class="marker-name">
+          <h2>${targetPerson.name}</h2>
+          <date>родился ${targetPerson.biography[0].date}</date>
+        </article>`,
+      ).addTo(map);
   });
 
   return map;
@@ -57,7 +54,8 @@ const createElement = () => {
 
 const init = async () => {
   await render();
-  await createElement();
+  await getPerson();
+  await createMap();
 };
 
 export default init;
