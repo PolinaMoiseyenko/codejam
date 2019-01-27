@@ -5,7 +5,7 @@ import data from '../../data/ru.json';
 import loadOverlay from '../overlay/index';
 
 const render = () => {
-  if ($('.content-person').length > 0 ) {
+  if ($('.content-person').length > 0) {
     const container = $('.content-person');
     const urlParams = new URLSearchParams(window.location.search);
     const currentId = urlParams.get('id');
@@ -13,8 +13,17 @@ const render = () => {
   }
 };
 
+const checkVideoData = () => {
+  const containerVideo = $('.content-person-video');
+  if ($(containerVideo).attr('data-url') == '') {
+    containerVideo.hide();
+  }
+};
+
+
 const init = async () => {
   await render();
+  await checkVideoData();
   loadOverlay();
 };
 

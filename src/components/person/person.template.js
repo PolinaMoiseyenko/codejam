@@ -16,7 +16,7 @@ export default function(person) {
                                 </div>
                             </div>
                         </div>
-                        <button data-url=${person.video} class="content-person-video js-overlay-start btn btn-light mt-3">Видео</button>
+                        <button data-url="${person.video}" class="content-person-video js-overlay-start btn btn-light mt-3">Видео</button>
                         <!-- End video overlay -->
                     </div>
                 </section>
