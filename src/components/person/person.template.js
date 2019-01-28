@@ -8,7 +8,7 @@ export default function(person) {
                     </div>
                     <div class="col-md-9 col-12 artist-intro">
                         <h1 class="content-person-title about-title section-title">${person.name}</h1>
-                               <!--<article class="content-person-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</article>-->
+                               <article class="content-person-item">${person.description}</article>
                         <!-- Start video overlay -->
                         <div class="overlay-video">
                             <div class="video-wrapper-ext">
