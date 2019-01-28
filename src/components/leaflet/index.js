@@ -20,23 +20,17 @@ const getPerson = () => {
   const currentId = urlParams.get('id');
 
   const lang = urlParams.get('lang');
-  let title = 'Биография на карте';
 
   switch (lang) {
     case 'en':
-      title = 'Life story';
       targetPerson = dataEng.find(person => person.id == currentId);
       break;
     case 'by':
-      title = 'Біяграфія на карце';
       targetPerson = dataBy.find(person => person.id == currentId);
       break;
     default:
       targetPerson = data.find(person => person.id == currentId);
   }
-
-  $('.geo-title').text(title);
-
   return targetPerson;
 };
 
