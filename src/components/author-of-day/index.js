@@ -9,10 +9,14 @@ if ($('.content-person').length >= 0) {
   const container = $('.random-wrapper');
   container.empty();
   const date = new Date();
-  const currentId = date.getDate() % data.length;
+  let currentId = date.getDate() % data.length;
 
   const urlParams = new URLSearchParams(window.location.search);
   const lang = urlParams.get('lang');
+
+  if (currentId === 0) {
+    currentId = 1;
+  }
 
   switch (lang) {
     case 'en':
