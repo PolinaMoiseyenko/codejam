@@ -1,6 +1,9 @@
 .person-of-day-img {
   max-width: 330px;
   border-radius: 20%;
+   @media (max-width: 992px) {
+      max-width: 200px;
+   }
 }
 .person-of-day-name a{
   color: inherit;
