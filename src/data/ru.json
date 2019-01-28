@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Владимир Сергеевич Базан",
-        "photo": "../images/Authors/Bazan/main.jpg",
+        "photo": "./images/Authors/Bazan/main.jpg",
         "biography": [
             {
                 "date": "21 октября 1953",
@@ -39,7 +39,7 @@
     {
         "id": 2,
         "name": "Борис Генделевич Берман",
-        "photo": "../images/Authors/Berman/main.jpg",
+        "photo": "./images/Authors/Berman/main.jpg",
         "biography": [
             {
                 "date": "1881",
@@ -79,7 +79,7 @@
     {
         "id": 3,
         "name": "Ян Булгак",
-        "photo": "../images/Authors/Bulgak/main.jpg",
+        "photo": "./images/Authors/Bulgak/main.jpg",
         "biography": [
             {
                 "date": "6 октября 1876",
@@ -128,7 +128,7 @@
     {
         "id": 4,
         "name": "Георгий Леонардович Лихтарович",
-        "photo": "../images/Authors/Lihtarovich/main.jpg",
+        "photo": "./images/Authors/Lihtarovich/main.jpg",
         "biography": [
             {
                 "date": "6 декабря 1947",
@@ -184,7 +184,7 @@
     {
         "id": 5,
         "name": "Михаил Маркович Шмерлинг",
-        "photo": "../images/Authors/Shmerling/main.jpg",
+        "photo": "./images/Authors/Shmerling/main.jpg",
         "biography": [
             {
                 "date": "7 декабря 1946",
