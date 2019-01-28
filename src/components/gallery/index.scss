@@ -1,12 +1,21 @@
 .carousel-inner {
   height: 600px;
+  @media (max-width: 992px) {
+    height: 200px;
+  }
   width: auto;
 	background-color:  #cccccc;
 
   .carousel-item {
     height:600px;
+     @media (max-width: 992px) {
+      height: auto;
+    }
       img.gallery-photo {
         width: auto;
+        @media (max-width: 992px) {
+          width: auto;
+        }
         position: absolute;  
         top: 0;  
         bottom: 0;  
@@ -14,6 +23,7 @@
         right: 0;  
         margin: auto;
     }
+
   }
 }
 

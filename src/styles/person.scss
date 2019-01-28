@@ -8,6 +8,10 @@ h3 {
 
 h1 {
   font-size: 2rem;
+    @media (max-width: 992px) {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
 }
 
 h2 {
@@ -22,7 +26,7 @@ h2 {
 .content-person-area {
   width: 100%;
   .person-img {
-    border-radius: 50%;
+    border-radius: 10%;
     width: 100%;
   }
 }

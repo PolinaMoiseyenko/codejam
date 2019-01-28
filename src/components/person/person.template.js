@@ -3,12 +3,12 @@ import translate from "./../../utils/translate";
 export default function(person) {
   return `<section class="content-section content-person-row main-row container d-flex flex-column align-items-center">
                 <section class="row artist-page-content content-person-area about-area">
-                    <div class="content-person-img col-3 artist-img">
+                    <div class="content-person-img col-md-3 col-12 artist-img">
                         <img class="person-img" src=${person.photo} alt="photograph's picture">
                     </div>
-                    <div class="col-9 artist-intro">
+                    <div class="col-md-9 col-12 artist-intro">
                         <h1 class="content-person-title about-title section-title">${person.name}</h1>
-                               <!--<article class="content-person-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</article>-->
+                               <article class="content-person-item">${person.description}</article>
                         <!-- Start video overlay -->
                         <div class="overlay-video">
                             <div class="video-wrapper-ext">
@@ -22,7 +22,6 @@ export default function(person) {
                         <!-- End video overlay -->
                     </div>
                 </section>
-                <!-- Right 2/3 -->
                 <section class="content-person-area timeline-area">
                     <h2 class="content-person-title timeline-title section-title border-bottom border-light mt-5">${ translate("История жизни") }</h2>
                     <ul class="timeline">
