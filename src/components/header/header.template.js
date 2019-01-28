@@ -8,7 +8,7 @@ export default function() {
           <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
               <a class="navbar-brand" href="${getLink("index.html")}">
-                <h1>${ translate("Фотографы Беларуси") }</h1>
+                <span class="logo-name">${ translate("Фотографы Беларуси") }</span>
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

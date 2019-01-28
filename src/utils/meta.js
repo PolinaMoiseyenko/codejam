@@ -1,5 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
+
 const metaData = () => {
-  const urlParams = new URLSearchParams(window.location.search);
   const lang = urlParams.get('lang');
 
   switch (lang) {
@@ -14,7 +15,17 @@ const metaData = () => {
   }
 };
 
+const pageTitle = () => {
+  const title = document.querySelector('h1');
+  const defaultTitle = document.querySelector('.logo-name');
+  if (title) {
+    document.title = title.innerText;
+  } else {
+    document.title = defaultTitle.innerText;
+  }
+};
 
-window.onload = () => {
+export default () => {
   metaData();
+  pageTitle();
 };

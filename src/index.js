@@ -1,5 +1,4 @@
 import 'regenerator-runtime/runtime';
-import $ from 'jquery';
 import 'bootstrap';
 import './styles/main.scss';
 import './styles/index.scss';
@@ -13,4 +12,8 @@ import './components/author-of-day/index';
 import './components/header/index';
 import './components/footer/index';
 import './components/main-info/index';
-import './utils/meta';
+import metaData from './utils/meta';
+
+window.onload = () => {
+  metaData();
+};
