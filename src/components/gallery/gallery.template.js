@@ -1,4 +1,6 @@
-export default `<h2 class="content-person-title gallery-title">Галерея</h2>
+import translate from "./../../utils/translate";
+
+export default `<h2 class="content-person-title gallery-title">${ translate("Галерея") }</h2>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
 

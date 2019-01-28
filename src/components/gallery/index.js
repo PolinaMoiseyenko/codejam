@@ -36,7 +36,7 @@ function photoRender() {
         photo.className = 'carousel-item';
       }
 
-      photo.innerHTML = `<img class="d-block w-100 gallery-photo" src=${link} alt="">`;
+      photo.innerHTML = `<img class="d-block gallery-photo" src=${link} alt="">`;
       wrapper.append(photo);
     }
   }
