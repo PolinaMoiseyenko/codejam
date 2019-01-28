@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Уладзімір Сяргеевіч Базан",
     "photo": "./images/Authors/Bazan/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "21 кастрычніка 1953",
@@ -39,6 +40,7 @@
     "id": 2,
     "name": "Барыс Гендэлевіч Берман",
     "photo": "./images/Authors/Berman/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "1881",
@@ -79,6 +81,7 @@
     "id": 3,
     "name": "Ян Булгак",
     "photo": "./images/Authors/Bulgak/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "6 кастрычніка 1876",
@@ -128,6 +131,7 @@
     "id": 4,
     "name": "Георгій Леанардавіч Ліхтаровіч",
     "photo": "./images/Authors/Lihtarovich/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "6 снежня 1947",
@@ -184,6 +188,7 @@
     "id": 5,
     "name": "Міхаіл Маркавіч Шмерлінг",
     "photo": "./images/Authors/Shmerling/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "7 снежня 1946",
