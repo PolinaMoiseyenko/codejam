@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import renderSearchResult from '../../utils/render-search-result';
+import renderSearchResult from './../search/render-search-result';
 import noResults from '../search/no-results.template';
 import interfaceNoResult from '../../data/interface/translation.json';
 import './index.scss';
