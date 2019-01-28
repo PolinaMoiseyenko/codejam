@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Vladimir Sergeyevich Bazan",
     "photo": "./images/Authors/Bazan/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "october 21, 1953",
@@ -39,6 +40,7 @@
     "id": 2,
     "name": "Boris Mendelevich Berman",
     "photo": "./images/Authors/Berman/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "1881",
@@ -79,6 +81,7 @@
     "id": 3,
     "name": "Jan Bulhak",
     "photo": "./images/Authors/Bulgak/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "October 6, 1876",
@@ -128,6 +131,7 @@
     "id": 4,
     "name": "Georgy Leonardovich Likhtarovich",
     "photo": "./images/Authors/Lihtarovich/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "December 6, 1947",
@@ -184,6 +188,7 @@
     "id": 5,
     "name": "Mikhail Markovich Shmerling",
     "photo": "./images/Authors/Shmerling/main.jpg",
+    "description": "",
     "biography": [
       {
         "date": "December 7, 1946 ",
