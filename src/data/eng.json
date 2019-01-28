@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Vladimir Sergeyevich Bazan",
     "photo": "./images/Authors/Bazan/main.jpg",
-    "description": "",
+    "description": "Belarusian photographer, photojournalist. Born in October 21, 1953. His photos are notable for unique methods of composition, careful selection of natural materials, exquisite professionalism of technical execution. The main works were reportage, journalistic and genre photography.",
     "biography": [
       {
         "date": "october 21, 1953",
@@ -40,7 +40,7 @@
     "id": 2,
     "name": "Boris Mendelevich Berman",
     "photo": "./images/Authors/Berman/main.jpg",
-    "description": "",
+    "description": "Among the many historical documents of the beginning of the 20th century there are the photos of Berka Berman which are displayed in Vileika local history museum. Berka lived and worked in Vileyka until October 1939. His works were dedicated to parades, solemn assemblies and holidays, religious processions, beautiful places and city streets.",
     "biography": [
       {
         "date": "1881",
@@ -81,7 +81,7 @@
     "id": 3,
     "name": "Jan Bulhak",
     "photo": "./images/Authors/Bulgak/main.jpg",
-    "description": "",
+    "description": "Ethnographer, folklorist, writer, photographer. In 1908, he set up his photo lab in Peresek manor near Minsk and was actively involved in photography. His works were exhibited in Minsk and published in Polish and German magazines. In 1911, he turned from an amateur photographer to a professional photographer. He photographed Vilna’s architectural monuments, opened a photo studio, taught photography at the university for many years and wrote several books about photo art.",
     "biography": [
       {
         "date": "October 6, 1876",
@@ -131,7 +131,7 @@
     "id": 4,
     "name": "Georgy Leonardovich Likhtarovich",
     "photo": "./images/Authors/Lihtarovich/main.jpg",
-    "description": "",
+    "description": "Having lived in Minsk all his life, he captured in photos the life of his country and hometown. In creative photography, the master follows the tradition of a lyrical landscape which was specific to the Belarusian art of the 60–80s of the 20th century. Soundness, quality and impeccable style are the main features of his work.",
     "biography": [
       {
         "date": "December 6, 1947",
@@ -188,7 +188,7 @@
     "id": 5,
     "name": "Mikhail Markovich Shmerling",
     "photo": "./images/Authors/Shmerling/main.jpg",
-    "description": "",
+    "description": "Belarusian photographer, member of the Union of Journalists of Belarus. The winner at Photographics-71 all-Union exhibition and Man and Earth international exhibition. Awarded with honorary diplomas of photo salons in Romania and England. Works in different genres of artistic photography.",
     "biography": [
       {
         "date": "December 7, 1946 ",
