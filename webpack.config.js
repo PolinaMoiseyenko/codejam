@@ -50,10 +50,10 @@ module.exports = {
       filename: 'all.html',
     }),
     new CopyWebpackPlugin([{
-        from: './src/images/',
-         to: './images/',
-         toType: 'dir',
-      },
+      from: './src/images/',
+      to: './images/',
+      toType: 'dir',
+    },
     ]),
   ],
   module: {
@@ -91,10 +91,10 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          "style-loader", // creates style nodes from JS strings
-          "css-loader", // translates CSS into CommonJS
-          'sass-loader' // compiles Sass to CSS, using Node Sass by default
-        ]
+          'style-loader', // creates style nodes from JS strings
+          'css-loader', // translates CSS into CommonJS
+          'sass-loader', // compiles Sass to CSS, using Node Sass by default
+        ],
       },
       {
         test: /\.js$/,

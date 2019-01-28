@@ -1,6 +1,6 @@
-import getLink from "./../../utils/getlink";
+import getLink from '../../utils/getlink';
 
-export default function(person) {
+export default function (person) {
   return `
    <div class="row py-5">
     <div class="col-md-3 col-12">
@@ -10,5 +10,5 @@ export default function(person) {
       <h3 class="photograph-name"><a href="${getLink('person.html')}&id=${person.id}">${person.name}</a></h3>
       <article class="">${person.description}</article>
     </div>
-  </div>`
+  </div>`;
 }

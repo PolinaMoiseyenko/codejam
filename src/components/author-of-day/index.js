@@ -5,7 +5,7 @@ import dataEng from '../../data/eng.json';
 import dataBy from '../../data/by.json';
 import './index.scss';
 
-if ($('.content-person').length >= 0 ) {
+if ($('.content-person').length >= 0) {
   const container = $('.random-wrapper');
   container.empty();
   const date = new Date();
@@ -16,12 +16,12 @@ if ($('.content-person').length >= 0 ) {
 
   switch (lang) {
     case 'en':
-      container.append(authorRender(dataEng.find(person => person.id == currentId)));
+      container.append(authorRender(dataEng.find(person => person.id === currentId)));
       break;
     case 'by':
-      container.append(authorRender(dataBy.find(person => person.id == currentId)));
+      container.append(authorRender(dataBy.find(person => person.id === currentId)));
       break;
     default:
-      container.append(authorRender(data.find(person => person.id == currentId)));
+      container.append(authorRender(data.find(person => person.id === currentId)));
   }
 }

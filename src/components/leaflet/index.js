@@ -5,14 +5,12 @@ import data from '../../data/ru.json';
 import dataEng from '../../data/eng.json';
 import dataBy from '../../data/by.json';
 
-
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
 const render = () => {
   const mapbox = template;
   $('.geo-row').append(mapbox);
 };
-
 
 let targetPerson = null;
 const getPerson = () => {
@@ -23,13 +21,13 @@ const getPerson = () => {
 
   switch (lang) {
     case 'en':
-      targetPerson = dataEng.find(person => person.id == currentId);
+      targetPerson = dataEng.find(person => person.id === +currentId);
       break;
     case 'by':
-      targetPerson = dataBy.find(person => person.id == currentId);
+      targetPerson = dataBy.find(person => person.id === +currentId);
       break;
     default:
-      targetPerson = data.find(person => person.id == currentId);
+      targetPerson = data.find(person => person.id === +currentId);
   }
   return targetPerson;
 };
@@ -62,9 +60,8 @@ const createMap = () => {
         </article>`,
         ).addTo(map);
     });
-
-    return map;
   }
+  return map;
 };
 
 export default () => {

@@ -5,7 +5,7 @@ import dataEng from '../../data/eng.json';
 import dataBy from '../../data/by.json';
 
 function renderPerson(obj, container, query) {
-  obj.map((person) => {
+  obj.map((person) => { // eslint-disable-line array-callback-return
     if (search(person, query)) {
       container.append(listItemRender(person));
     }
