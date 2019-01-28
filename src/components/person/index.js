@@ -6,7 +6,7 @@ import dataEng from '../../data/eng.json';
 import dataBy from '../../data/by.json';
 import loadOverlay from '../overlay/index';
 import mapbox from '../leaflet/index';
-import galleryRender from '../gallery';
+import galleryRender from '../gallery/index';
 
 const render = () => {
   if ($('.content-person').length > 0) {
@@ -26,8 +26,6 @@ const render = () => {
       default:
         container.append(personRender(data.find(person => person.id == currentId)));
     }
-    container.append(galleryRender(data.find(person => person.id == currentId)))
-
   }
 };
 
@@ -43,9 +41,10 @@ const checkVideoData = () => {
 const init = async () => {
   await render();
   await checkVideoData();
-  loadOverlay();
-  mapbox();
-  $('.carousel').carousel()
+  await loadOverlay();
+  await mapbox();
+  await galleryRender();
+  $('.carousel').carousel();
 };
 
 init();

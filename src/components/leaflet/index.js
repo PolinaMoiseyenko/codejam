@@ -71,10 +71,8 @@ const createMap = () => {
   return map;
 };
 
-const init = async () => {
-  await render();
-  await getPerson();
-  await createMap();
+export default () => {
+  render();
+  getPerson();
+  createMap();
 };
-
-export default init;
