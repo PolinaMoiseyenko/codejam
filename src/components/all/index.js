@@ -1,23 +1,42 @@
 import $ from 'jquery';
-import listItemRender from './list-item.template';
-import data from '../../data/ru.json';
-import dataEng from '../../data/eng.json';
-import dataBy from '../../data/by.json';
+import renderSearchResult from '../../utils/render-search-result';
+import noResults from '../search/no-results.template';
+import interfaceNoResult from '../../data/interface/translation.json';
 
 if ($('.photographs').length > 0) {
   const container = $('.photographs-list');
-
+  const searchLine = $('.search-input');
   const urlParams = new URLSearchParams(window.location.search);
   const lang = urlParams.get('lang');
+  const langNoResult = interfaceNoResult[0].noResults;
+  const langPlaceholder = interfaceNoResult[0].searchCase;
 
+  searchLine.on('keypress', (event) => {
+    container.empty();
+    renderSearchResult(lang, container, event.target.value);
+    if (!container[0].children.length) {
+      switch (lang) {
+        case 'en':
+          container.append(noResults(langNoResult.en));
+          break;
+        case 'by':
+          container.append(noResults(langNoResult.by));
+          break;
+        default:
+          container.append(noResults(langNoResult.ru));
+      }
+    }
+  });
   switch (lang) {
     case 'en':
-      dataEng.map(person => container.append(listItemRender(person)));
+      searchLine[0].placeholder = langPlaceholder.en;
       break;
     case 'by':
-      dataBy.map(person => container.append(listItemRender(person)));
+      searchLine[0].placeholder = langPlaceholder.en;
       break;
     default:
-      data.map(person => container.append(listItemRender(person)));
+      searchLine[0].placeholder = langPlaceholder.ru;
   }
+
+  renderSearchResult(lang, container, '');
 }
