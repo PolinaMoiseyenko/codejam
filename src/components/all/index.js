@@ -32,7 +32,7 @@ if ($('.photographs').length > 0) {
       searchLine[0].placeholder = langPlaceholder.en;
       break;
     case 'by':
-      searchLine[0].placeholder = langPlaceholder.en;
+      searchLine[0].placeholder = langPlaceholder.by;
       break;
     default:
       searchLine[0].placeholder = langPlaceholder.ru;
