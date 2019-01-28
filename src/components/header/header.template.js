@@ -1,4 +1,5 @@
 import translate from "./../../utils/translate";
+import getLink from "./../../utils/getlink";
 
 export default function() {
 	return `
@@ -15,10 +16,10 @@ export default function() {
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">${ translate("Главная") }</a>
+                    <a class="nav-link" href="${getLink('index.html')}">${ translate("Главная") }</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="all.html">${translate("Фотографы")}</a>
+                    <a class="nav-link" href="${getLink('all.html')}">${translate("Фотографы")}</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#aboutUs">${translate("O Нас")}</a>
@@ -28,9 +29,9 @@ export default function() {
                       ${translate("Язык")}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="${window.location.origin+window.location.pathname}?lang=ru">русский</a>
-                      <a class="dropdown-item" href="${window.location.origin+window.location.pathname}?lang=en">english</a>
-                      <a class="dropdown-item" href="${window.location.origin+window.location.pathname}?lang=by">беларускі</a>
+                      <a class="dropdown-item" href="${getLink(window.location.origin+window.location.pathname, 'ru', true)}">русский</a>
+                      <a class="dropdown-item" href="${getLink(window.location.origin+window.location.pathname, 'en', true)}">english</a>
+                      <a class="dropdown-item" href="${getLink(window.location.origin+window.location.pathname, 'by', true)}">беларускі</a>
                     </div>
                   </li>
                 </ul>
