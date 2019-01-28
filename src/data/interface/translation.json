@@ -17,7 +17,13 @@
       "ru": "История фотографии Беларуси… Возможно, когда-нибудь она будет написана. Информация об одних из самых выдающихся фотографах Беларуси: их биография, работы, а также видео о них собраны на данном сайте.",
       "en": "The history of photography in Belarus ... Perhaps someday it will be written. Information about some of the most outstanding photographers of Belarus: their biography, work, as well as videos about them are collected on this site.",
       "by": "Гісторыя фатаграфіі Беларусі ... Магчыма, калі-небудзь яна будзе напісана. Інфармацыя пра адны з самых выбітных фатаграфія Беларусі: іх біяграфія, працы, а таксама відэа пра іх сабраны на дадзеным сайце."
-    }
+    },
+    "Галерея": {"en":"Gallery","by": "Галерэя"},
+    "Достижения": {"en":"Achievments","by": "Дасягненні"},
+    "Биография на карте": {"en":"Life story on the map","by": "Біяграфія на карце"},
+    "Видео": {"en":"Video","by": "Відыё"},
+    "История жизни": {"en":"Life story", "by": "Гісторыя жыцця"}
+
   }
 
 ]
