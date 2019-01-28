@@ -1,8 +1,8 @@
-import listItemRender from '../components/all/list-item.template';
-import search from './search';
-import data from '../data/ru.json';
-import dataEng from '../data/eng.json';
-import dataBy from '../data/by.json';
+import listItemRender from '../all/list-item.template';
+import search from './../../utils/search';
+import data from '../../data/ru.json';
+import dataEng from '../../data/eng.json';
+import dataBy from '../../data/by.json';
 
 function renderPerson(obj, container, query) {
   obj.map((person) => { // eslint-disable-line array-callback-return

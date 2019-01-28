@@ -1,6 +1,7 @@
 import './index.scss';
 import template from './gallery.template';
 import data from '../../data/ru.json';
+import './index.scss';
 
 const draw = () => {
   const container = document.querySelector('.gallery-row');

@@ -1,0 +1,42 @@
+footer {
+  padding: 50px;
+  .devs {
+        .dev {
+          text-align: center;
+          img {
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 102px;
+          }
+          .dev__info {
+            color: #8e8e8e;
+            padding-top: 9px;
+              .dev__name {
+                color: #303030;
+                font-family: "Lato Semibold";
+                font-size: 17px;
+              }
+              .dev__contacts {
+                padding-top: 4px;
+                 @media (max-width: 992px) {
+                    margin-bottom: 20px;
+                 }
+                a {
+                    color: #bfbfbf;
+                    margin: 0 9px;
+                  i {                 
+                    font-size: 14px;
+                      &.fa-link {
+                        transform: rotate(90deg);
+                      }
+                  }
+                  &:hover, &:focus {
+                    color: #1f89ba;
+                  }
+                }
+
+              }
+          }
+        }
+    }
+}

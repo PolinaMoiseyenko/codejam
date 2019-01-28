@@ -7,6 +7,7 @@ import dataBy from '../../data/by.json';
 import loadOverlay from '../overlay/index';
 import mapbox from '../leaflet/index';
 import galleryRender from '../gallery/index';
+import './index.scss';
 
 const render = () => {
   if ($('.content-person').length > 0) {

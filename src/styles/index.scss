@@ -1,132 +1,30 @@
-h1, h2, h3 {
+$font-family: britishcouncilsans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+
+
+h1, 
+h2,
+h3 {
+  font-family: $font-family;
   width: 100%;
   text-align: center;
   margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+h2 {
+  font-size: 1.5rem;
 }
 
 .container {
   margin: 0 auto;
 }
 
-header {
-  background-color: #343a40;
-  nav.navbar {
-   width: 100%;
-     @media (max-width: 992px) {
-      margin-left: 0;
-     }
-    ul.navbar-nav {
-      margin-left: 60px;
-        li {
-          padding: 30px 15px;
-            &.language-select {
-              @media (min-width: 992px) {
-                background: url('../images/language-select.png') no-repeat left;
-                margin-left: 30px;
-                padding-left: 50px;
-              }
-              
-            }
-            a.nav-link {
-              color: #ffffff;
-              text-transform: uppercase;
-              font-size: 18px;
-                @media (max-width: 992px) {
-                 font-size: 14px;
-                 }
-              font-weight: bold;
-                &:hover, &:focus {
-                  text-decoration: underline;
-                }
-            }
-        }
-    }
-  }
-  @media (min-width: 992px) {
-   &.on-main-page {
-      background: url('../images/header-bg.png');
-      background-size: cover;
-      min-height: 500px;
-      background-color: transparent;
-      nav.navbar {  
-        margin-left: -100px;
-        margin-top: 110px;
-         width: 100%;
-         @media (max-width: 992px) {
-          margin-left: 0;
-        }
-        ul.navbar-nav {
-          margin-left: 70px;
-        }
-      }
-    }
- }
- 
-	
-}
 
-main.content-area {
-  section {
-    padding: 50px;
-      @media (max-width: 992px) {
-        padding: 0;
-      }
 
-      &.main-info {
-          p {
-            text-align: center;
-            font-size: 18px;
-          }
-    }
-    &.random-person {
-      background: url('../images/middle-bg.png');
-        .random-wrapper {
-          width: 400px;
-          max-width: 100%;
-          background: rgba(255, 255, 255 , 0.6);
-          padding: 20px;
-          margin: 0 auto;
-          text-align: center;
-        }
-    }
-  }
-}
 
-footer {
-  padding: 50px;
-  .devs {
-        .dev {
-          text-align: center;
-          img {
-            border: 5px solid rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            width: 102px;
-          }
-          .dev__info {
-            color: #8e8e8e;
-            padding-top: 9px;
-              .dev__name {
-                color: #303030;
-                font-family: "Lato Semibold";
-                font-size: 17px;
-              }
-              .dev__contacts {
-                padding-top: 4px;
-                a {
-                    color: #bfbfbf;
-                    margin: 0 9px;
-                  i {                 
-                    font-size: 14px;
-                      &.fa-link {
-                        transform: rotate(90deg);
-                      }
-                  }
-                  &:hover, &:focus {
-                    color: #1f89ba;
-                  }
-                }
-              }
-          }
-        }
-    }
-}
+
+
