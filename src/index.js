@@ -3,8 +3,6 @@ import $ from 'jquery';
 import 'bootstrap';
 import './styles/main.scss';
 import './styles/index.scss';
-import './styles/all.scss';
-import './styles/person.scss';
 
 import './components/all/index';
 import './components/person/index';
