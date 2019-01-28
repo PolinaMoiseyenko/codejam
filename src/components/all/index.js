@@ -11,7 +11,7 @@ if ($('.photographs').length > 0) {
   const langNoResult = interfaceNoResult[0].noResults;
   const langPlaceholder = interfaceNoResult[0].searchCase;
 
-  searchLine.on('keypress', (event) => {
+  searchLine.on('keyup', (event) => {
     container.empty();
     renderSearchResult(lang, container, event.target.value);
     if (!container[0].children.length) {
