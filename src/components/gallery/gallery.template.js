@@ -1,6 +1,6 @@
-import translate from "./../../utils/translate";
+import translate from '../../utils/translate';
 
-export default `<h2 class="content-person-title gallery-title">${ translate("Галерея") }</h2>
+export default `<h2 class="content-person-title gallery-title">${translate('Галерея')}</h2>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
 
@@ -13,6 +13,4 @@ export default `<h2 class="content-person-title gallery-title">${ translate("Г�
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-
-`;
+  </div>`;

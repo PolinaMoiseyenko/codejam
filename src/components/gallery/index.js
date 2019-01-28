@@ -9,13 +9,11 @@ const draw = () => {
   }
 };
 
-
 const getPerson = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const currentId = urlParams.get('id');
-  return data.find(person => person.id == currentId);
+  return data.find(person => person.id === +currentId);
 };
-
 
 function photoRender() {
   const targetPerson = getPerson();

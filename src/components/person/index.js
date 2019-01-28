@@ -18,25 +18,23 @@ const render = () => {
 
     switch (lang) {
       case 'en':
-        container.append(personRender(dataEng.find(person => person.id == currentId)));
+        container.append(personRender(dataEng.find(person => person.id === +currentId)));
         break;
       case 'by':
-        container.append(personRender(dataBy.find(person => person.id == currentId)));
+        container.append(personRender(dataBy.find(person => person.id === +currentId)));
         break;
       default:
-        container.append(personRender(data.find(person => person.id == currentId)));
+        container.append(personRender(data.find(person => person.id === +currentId)));
     }
   }
 };
 
-
 const checkVideoData = () => {
   const containerVideo = $('.content-person-video');
-  if ($(containerVideo).attr('data-url') == '') {
+  if ($(containerVideo).attr('data-url') === '') {
     containerVideo.hide();
   }
 };
-
 
 const init = async () => {
   await render();

@@ -4,5 +4,5 @@ export default function (noResults) {
     <div class="col-12 px-5">
       <h3 class="photograph-name">${noResults}</h3>
     </div>
-  </div>`
+  </div>`;
 }

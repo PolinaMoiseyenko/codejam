@@ -20,7 +20,6 @@ const contoller = () => {
     startVideo();
   });
 
-
   // video overlay: close =============================
 
   $('.overlay-video').on('click', (event) => {

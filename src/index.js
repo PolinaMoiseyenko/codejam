@@ -1,5 +1,4 @@
 import 'regenerator-runtime/runtime';
-import $ from 'jquery';
 import 'bootstrap';
 import './styles/main.scss';
 import './styles/index.scss';
