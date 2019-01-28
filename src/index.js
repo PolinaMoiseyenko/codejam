@@ -13,3 +13,4 @@ import './components/author-of-day/index';
 import './components/header/index';
 import './components/footer/index';
 import './components/main-info/index';
+import './utils/meta';
