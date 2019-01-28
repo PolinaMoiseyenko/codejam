@@ -2,6 +2,7 @@ import $ from 'jquery';
 import renderSearchResult from '../../utils/render-search-result';
 import noResults from '../search/no-results.template';
 import interfaceNoResult from '../../data/interface/translation.json';
+import './index.scss';
 
 if ($('.photographs').length > 0) {
   const container = $('.photographs-list');
@@ -11,7 +12,7 @@ if ($('.photographs').length > 0) {
   const langNoResult = interfaceNoResult[0].noResults;
   const langPlaceholder = interfaceNoResult[0].searchCase;
 
-  searchLine.on('keypress', (event) => {
+  searchLine.on('keyup', (event) => {
     container.empty();
     renderSearchResult(lang, container, event.target.value);
     if (!container[0].children.length) {
