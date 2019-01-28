@@ -46,29 +46,31 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhcm9oaW4iLCJhIjoiY2pyZGVld2V1MW5iZjQ1cG5zc
 
 let map = null;
 const createMap = () => {
-  map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    zoom: 12,
-    center: targetPerson.geo,
-  });
+  if (targetPerson !== undefined) {
+    map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v10',
+      zoom: 12,
+      center: targetPerson.geo,
+    });
 
-  map.on('load', () => {
-    const control = new mapboxgl.NavigationControl();
-    map.addControl(control, 'top-left');
+    map.on('load', () => {
+      const control = new mapboxgl.NavigationControl();
+      map.addControl(control, 'top-left');
 
-    new mapboxgl.Popup({ closeOnClick: false })
-      .setLngLat(targetPerson.geo)
-      .setHTML(
-        `<article class="marker-name">
+      new mapboxgl.Popup({ closeOnClick: false })
+        .setLngLat(targetPerson.geo)
+        .setHTML(
+          `<article class="marker-name">
           <h2>${targetPerson.name}</h2>
           <date>${targetPerson.biography[0].date}</date>
           <p>${targetPerson.geoname}</p>
         </article>`,
-      ).addTo(map);
-  });
+        ).addTo(map);
+    });
 
-  return map;
+    return map;
+  }
 };
 
 export default () => {
